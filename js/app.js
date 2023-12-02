@@ -1,8 +1,15 @@
 const APIURL =///for showing trending /movie////
     "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";/////image path for movie////
+
+
 const SEARCHAPI =
     "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";/////searching movie on the base you entered in search box///
+
+
+
 const moiveBox = document.querySelector("#movie-box")
 
 ///makeing async fn for geeting movie data ////
@@ -14,6 +21,8 @@ const getMovies = async (url) => {
 
 
 }
+
+///for showing top 20 movies////
 getMovies(APIURL);
 
 /////////makeing async fn for Showing  movie data ////
