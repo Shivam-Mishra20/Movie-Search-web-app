@@ -22,6 +22,8 @@ const getMovies = async (url) => {
 
 }
 
+
+
 ///for showing top 20 movies////
 getMovies(APIURL);
 
